@@ -2,7 +2,7 @@
 Module 10 Challenge - SURFS UP
 
 ## Instructions
-![Image]() Surfer
+![Image](https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/surfs-up.png) 
 
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii. To help with your trip planning, you decide to do a climate analysis about the area. The following sections outline the steps that you need to take to accomplish this task.
 
@@ -27,8 +27,9 @@ ___
 5. Sort the DataFrame values by "date".
 6. Plot the results by using the DataFrame plot method, as the following image shows:
 
-![Image]()
-
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/precipitation.png" width="600"/>
+                                                                                                           
+                                                                                                           
 7. Use Pandas to print the summary statistics for the precipitation data.
 
 #### Station Analysis
@@ -43,7 +44,7 @@ ___
     * Query the previous 12 months of TOBS data for that station.
     * Plot the results as a histogram with bins=12, as the following image shows:
 
-![Image]()
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/station-histogram.png" width="600"/>
 
 4. Close your session.
 
@@ -87,12 +88,15 @@ ___
     1. Separated the date up into year/month/day
     2. Using the datetime class I took the delta between the recent date and 1 year ago (had to use 366 days to go from date to date).
     3. Plotted the data on a chart.
-    ![Image]() temps bar
+   
+    <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climate_analysis_precip_bar.png" width="600"/>
+    
 8. Worked on the Exploratory Analysis:
     1. Used the tride and true count() function for the # of stations.
     2. Found lowest, highest and average temps.
     3. Using a dataframe, I was able to plot a histogram
-    ![Image]() - tobs chart
+    <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climate_analysis_tobs_bar.png" width="600"/>
+    
 9. Closed the session.
 
 
@@ -110,7 +114,7 @@ ___
 5. Once I was connected successfully, I began working on the routes menu: home (/), precipitation, stations, tobs, temp start and temp start-end.
 6. Then came the definitions for each route. 
     * Precipitation was pretty straight forward as we already had an end date from the previous exercise. 
-    * Stations gave me some trouble as I had to use a list instead of a dictionary.  Imagine my facepalm moment when I realized I didn't have my numpy statement at the beginning of the code correct. Once i fixed `import numpy as **numpy**` to `import numpy as **np**` you can imagine my joy it was finally working.
+    * Stations gave me some trouble as I had to use a list instead of a dictionary.  Imagine my facepalm moment when I realized I didn't have my numpy statement at the beginning of the code correct. Once i fixed `import numpy as numpy` to `import numpy as np` you can imagine my joy it was finally working.
     * TOBS was similar to Stations with the numpy statement. And I believe I had to correct the capitalization of `ourStation` to ensure it matched the rest of the code.
     * the Start and End gave me the largest headache.
         1. I wasn't sure of the start and end values at first.  It took me some time, and some research, to understand those placeholders were for the user of the app to actually insert dates into the URL. 
@@ -122,24 +126,34 @@ ___
 I was able to run the Flask app, check the provided routes and have saved a copy of my results here:
 * Home Page:
 
-    ![Image]()
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climateapp-home.png" />
 
 ___
 * Precipitation :
 
-    ![Image]()
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climateapp-precip.png" />
 ___
 * Stations:
 
-    ![Image]()
-___
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climateapp-stations.png" />
+     
+ ___
 * TOBS
 
-    ![Image]()
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climateapp-temps.png" />
 ___
 * Start:
 
-    ![Image]()
+   With empty date: <br/>
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climateapp-start-null.png" /> 
+
+   With a specific date: <br/>
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climateapp-start-date.png" />
 ___
 * Start-End
-    ![Image]()
+
+   With empty dates: <br/>
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climateapp-startend-null.png" /> 
+
+   With specific dates:<br/>
+   <img src="https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/climateapp-startend-dates.png" />
