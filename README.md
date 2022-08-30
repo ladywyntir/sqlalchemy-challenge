@@ -106,7 +106,7 @@ ___
 
 
 
-**climate_app.py**
+**app.py**
 1. Took a lot of code from the original Jupyter Notebook :)
 2. First I set up the engine, the classes, and opened a session. (the session could have also been opened by each definition clause, but I was doing a bit of experimenting.)
 3. Next had to define the Flask app.
