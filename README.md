@@ -1,6 +1,11 @@
 # sqlalchemy-challenge
 Module 10 Challenge - SURFS UP
 
+Please note the folders are categorized as they seem.  
+* **Images** holds all images for this readme.
+* **Resources** holds the source files
+* **SurfsUp** holds the Jupyter Notebook and the Python file for Flask to run.
+___
 ## Instructions
 ![Image](https://github.com/ladywyntir/sqlalchemy-challenge/blob/main/Images/surfs-up.png) 
 
